@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1c1c;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  width: 380px;
+  border-radius: 15px;
+  padding: 25px 30px;
+  overflow: hidden;
+}
+.card .top-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .top-area i {
+  font-size: 30px;
+  color: #515c6f;
+}
+.card .top-area h2 {
+  font-weight: 500;
+  font-size: 25px;
+  color: #515c6f;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.card .image {
+  width: 100%;
+  height: 265px;
+  margin-top: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+.card .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.card .song-details {
+  margin: 30px 0;
+  text-align: center;
+}
+.card .song-details h2 {
+  color: #515c6f;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.card .song-details p {
+  color: #515c6f;
+  opacity: 0.9;
+  font-size: 15px;
+}
+.card .progress-area {
+  width: 100%;
+  height: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.card .progress-area:hover .progress-bar::before {
+  opacity: 1;
+}
+.card .progress-area .progress-bar {
+  height: inherit;
+  width: 0%;
+  position: relative;
+  background-color: #000;
+  border-radius: inherit;
+}
+.card .progress-area .progress-bar::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  top: 50%;
+  right: -5px;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  background: inherit;
+  transition: opacity 0.2s ease;
+}
+.card .timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.card .timer span {
+  font-weight: 600;
+}
+.card .controls {
+  margin: 40px 0 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .controls i {
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card .controls .play {
+  background-color: #18191c;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #FFF;
+  transition: 0.5s ease;
+}
+.card .controls .play:hover {
+  background-color: #009bff;
+}/*# sourceMappingURL=style.css.map */
